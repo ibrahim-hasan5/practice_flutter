@@ -84,6 +84,13 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton(onPressed: (){
                     Navigator.pushReplacementNamed(context, 'home');
                   }, child: Text('home')),
+                  SizedBox(height: 10,),
+                  ElevatedButton(onPressed: (){
+                    Navigator.pushNamed(context, 'dash', arguments: {
+                      'phone' : phoneController.text,
+                      'name' : 'Ibrahim'
+                    });
+                  }, child: Text('Dashoard')),
                 ],
               ),
             ),
