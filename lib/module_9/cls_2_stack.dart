@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/module_9/widget/dog_card.dart';
 class Cls2Stack extends StatelessWidget {
   const Cls2Stack({super.key});
 
@@ -13,6 +14,11 @@ class Cls2Stack extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
+            DogCard(img: 'https://www.shutterstock.com/image-photo/happy-golden-retriever-shiba-dogs-600nw-2413261731.jpg',
+              title: 'Pair Dog', rating: '5.0',),
+
+            SizedBox(height: 10,),
             Stack(
               children: [
                 Container(
@@ -73,3 +79,4 @@ class Cls2Stack extends StatelessWidget {
     );
   }
 }
+

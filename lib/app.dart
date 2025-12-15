@@ -8,6 +8,7 @@ import 'package:practice/module_8/cls_2.dart';
 import 'package:practice/module_8/cls_3.dart';
 import 'package:practice/module_9/cls_2.dart';
 import 'package:practice/module_9/cls_2_stack.dart';
+import 'package:practice/module_9/cls_3.dart';
 import 'package:practice/module_9/theme_test.dart';
 
 import 'home.dart';
@@ -72,7 +73,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       title: 'Ibuuuuuu',
       home: ThemeTest(),
-      initialRoute: 'stack',
+      initialRoute: 'widget',
       routes: {
         'home' : (context) => Home(phone: '01111'),
         'btns' : (context) => Buttongrp(),
@@ -80,6 +81,7 @@ class MyApp extends StatelessWidget {
         'dash': (context)=> Dashboard(),
         'list': (context)=> FList(),
         'stack': (context)=> Cls2Stack(),
+        'widget': (context)=> OwnWidget()
       },
     );
   }
