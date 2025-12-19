@@ -6,6 +6,7 @@ import 'package:practice/module_11/cls_1Rspn.dart';
 import 'package:practice/module_11/cls_2.dart';
 import 'package:practice/module_11/cls_3.dart';
 import 'package:practice/module_11/todo.dart';
+import 'package:practice/module_12/calculator.dart';
 import 'package:practice/module_12/cls_1.dart';
 import 'package:practice/module_12/cls_2.dart';
 import 'package:practice/module_2/class_2_button.dart';
@@ -85,7 +86,7 @@ class MyApp extends StatelessWidget {
           themeMode: ThemeMode.light,
           title: 'Ibuuuuuu',
           home: ThemeTest(),
-          initialRoute: 'lifeCycle',
+          initialRoute: 'Calculator',
           routes: {
             'home': (context) => Home(phone: '01111'),
             'btns': (context) => Buttongrp(),
@@ -100,6 +101,7 @@ class MyApp extends StatelessWidget {
             'todo':(context)=> Todo(),
             'Stateclass':(context)=> StateClass(),
             'lifeCycle':(context)=> LifeCycle(),
+            'Calculator':(context)=> Calculator(),
           },
         );
       },
