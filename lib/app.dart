@@ -23,6 +23,7 @@ import 'package:practice/module_9/cls_3.dart';
 import 'package:practice/module_9/theme_test.dart';
 
 import 'home.dart';
+import 'module_13/CRUD/crud.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -88,7 +89,7 @@ class MyApp extends StatelessWidget {
           themeMode: ThemeMode.light,
           title: 'Ibuuuuuu',
           home: ThemeTest(),
-          initialRoute: 'API',
+          initialRoute: 'Crud',
           routes: {
             'home': (context) => Home(phone: '01111'),
             'btns': (context) => Buttongrp(),
@@ -106,6 +107,7 @@ class MyApp extends StatelessWidget {
             'Calculator':(context)=> Calculator(),
             'Calculator2':(context)=> Calculator2(),
             'API':(context)=> APICall(),
+            'Crud': (context) => Crud(),
           },
         );
       },
