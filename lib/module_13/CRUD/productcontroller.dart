@@ -45,6 +45,28 @@ class ProductController {
     }
   }
 
+  Future<bool> updateProduct(String id, Data data) async {
+    final response = await http.post(
+      Uri.parse(Urls.updateProduct(id)),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        "ProductName": data.productName,
+        "Img": data.img,
+        "Qty": data.qty,
+        "UnitPrice": data.unitPrice,
+        "TotalPrice": data.totalPrice,
+      }),
+    );
+
+    print(response.body);
+
+    if (response.statusCode == 200) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   Future<bool> deleteProduct(String ProductId) async {
     final response = await http.get(Uri.parse(Urls.deleteProduct(ProductId)));
     print(Urls.deleteProduct(ProductId));
@@ -54,4 +76,5 @@ class ProductController {
       return false;
     }
   }
+
 }
